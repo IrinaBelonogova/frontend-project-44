@@ -23,5 +23,5 @@ const isPrime = (num) => {
       return [question, currectAnswer]
   }
   export default () => {
-  game (description, getQuestionAndAnswer);
+  game(description, getQuestionAndAnswer);
   }
