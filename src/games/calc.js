@@ -31,5 +31,5 @@ function generateExpression() {
   }
 
 export default () => {
-game (description, getQuestionAndAnswer)
+game(description, getQuestionAndAnswer)
 }

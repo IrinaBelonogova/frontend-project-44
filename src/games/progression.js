@@ -26,5 +26,5 @@ const generateProgression = () => {
   }
 
 export default () => {
-game (description, getQuestionAndAnswer)
+game(description, getQuestionAndAnswer)
 }
