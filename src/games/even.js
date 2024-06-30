@@ -9,7 +9,7 @@ const randomInteger = (min, max) => {
   return Math.floor(rand);
 }
 const getQuestionAndAnswer = () => {
-  const question = randomInteger (1, 9);
+  const question = randomInteger(1, 9);
   const currectAnswer = isEven(question) ? 'yes' : 'no'
     return [question, currectAnswer]
 }
