@@ -20,7 +20,8 @@ export default (description, getQuestionAndAnswer) => {
     } else {
         console.log(`${answer} is wrong answer ;(. Correct answer was ${currectAnswer}`);
         console.log(`Let's try again, ${name}`);
-    }
-    }
-    console.log(`Congratulations, ${name}!`)
+        return;
+    }   
+} 
+    console.log(`Congratulations, ${name}!`);
 }

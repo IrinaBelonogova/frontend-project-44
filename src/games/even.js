@@ -8,6 +8,7 @@ const randomInteger = (min, max) => {
   let rand = min + Math.random() * (max + 1 - min);
   return Math.floor(rand);
 }
+
 const getQuestionAndAnswer = () => {
   const question = randomInteger(1, 9);
   const currectAnswer = isEven(question) ? 'yes' : 'no'
