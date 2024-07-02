@@ -13,7 +13,7 @@ export default (description, getQuestionAndAnswer) => {
     const [question, currectAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`)
 
-    const answer = readlineSync.question('Your answer:');
+    const answer = readlineSync.question('Your answer: ');
 
     if (answer === currectAnswer){
         console.log('Correct!');
