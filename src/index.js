@@ -10,7 +10,7 @@ export default (description, getQuestionAndAnswer) => {
 
   console.log(description);
 
-  for (let i = 0; i < countRound; i+=1) {
+  for (let i = 0; i < countRound; i += 1) {
     const [question, currectAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
 
@@ -19,8 +19,8 @@ export default (description, getQuestionAndAnswer) => {
     if (answer === currectAnswer) {
       console.log('Correct!');
     } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${currectAnswer}'.`);
-        console.log(`Let's try again, ${name}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${currectAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
