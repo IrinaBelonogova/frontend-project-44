@@ -7,8 +7,8 @@ const description = 'What is the result of the expression?';
 const getRandomOperationSymbol = (symbols) => {
   const randomIndex = getRandomNumber(0, symbols.length);
   const randomSymbol = symbols[randomIndex];
-    return randomSymbol;
-  };
+  return randomSymbol;
+};
 
 const calculateOperations = (symbol, firstValue, secondValue) => {
   switch (symbol) {
@@ -34,5 +34,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-game(description, getQuestionAndAnswer);
+  game(description, getQuestionAndAnswer);
 };
