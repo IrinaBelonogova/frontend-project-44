@@ -9,7 +9,7 @@ const generateProgression = () => {
   const length = 10;
 
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i+=1) {
     progression[i] = start + i * step;
   }
 
