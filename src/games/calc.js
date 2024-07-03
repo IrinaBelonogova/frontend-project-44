@@ -3,36 +3,36 @@ import getRandomNumber from '../random.js';
 
 const operationSymbols = ['+', '-', '*'];
 const description = 'What is the result of the expression?';
-    
-  const getRandomOperationSymbol = (symbols) => {
+
+const getRandomOperationSymbol = (symbols) => {
   const randomIndex = getRandomNumber(0, symbols.length);
   const randomSymbol = symbols[randomIndex];
     return randomSymbol;
   };
-    
-  const calculateOperations = (symbol, firstValue, secondValue) => {
-    switch (symbol) {
-      case '+':
-        return firstValue + secondValue;
-      case '-':
-        return firstValue - secondValue;
-      case '*':
-        return firstValue * secondValue;
-      default:
-        return null;
-      }
-    };
-    const getQuestionAndAnswer = () => {
-      const randomSymbol = getRandomOperationSymbol(operationSymbols);
-      const firstNumber = getRandomNumber(0, 50);
-      const secondNumber = getRandomNumber(0, 50);
-    
-      const question = `${firstNumber} ${randomSymbol} ${secondNumber}`;
-      const correctAnswer = String(calculateOperations(randomSymbol, firstNumber, secondNumber));
-    
-      return [question, correctAnswer];
-    };
+
+const calculateOperations = (symbol, firstValue, secondValue) => {
+  switch (symbol) {
+    case '+':
+      return firstValue + secondValue;
+    case '-':
+      return firstValue - secondValue;
+    case '*':
+      return firstValue * secondValue;
+    default:
+      return null;
+  }
+};
+const getQuestionAndAnswer = () => {
+  const randomSymbol = getRandomOperationSymbol(operationSymbols);
+  const firstNumber = getRandomNumber(0, 50);
+  const secondNumber = getRandomNumber(0, 50);
+
+  const question = `${firstNumber} ${randomSymbol} ${secondNumber}`;
+  const correctAnswer = String(calculateOperations(randomSymbol, firstNumber, secondNumber));
+
+  return [question, correctAnswer];
+};
 
 export default () => {
-game(description, getQuestionAndAnswer)
-}
+game(description, getQuestionAndAnswer);
+};

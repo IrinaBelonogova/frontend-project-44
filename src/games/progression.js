@@ -27,5 +27,5 @@ const getQuestionAndAnswer = () => {
 };
 
 export default () => {
-game(description, getQuestionAndAnswer)
-}
+  game(description, getQuestionAndAnswer);
+};

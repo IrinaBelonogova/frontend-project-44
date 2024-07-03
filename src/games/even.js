@@ -7,9 +7,9 @@ const isEven = (num) => num % 2 === 0;
 
 const getQuestionAndAnswer = () => {
   const question = getRandomNumber(1, 9);
-  const currectAnswer = isEven(question) ? 'yes' : 'no'
-    return [question, currectAnswer]
-}
+  const currectAnswer = isEven(question) ? 'yes' : 'no';
+  return [question, currectAnswer];
+};
 export default () => {
-game(description, getQuestionAndAnswer);
-}
+  game(description, getQuestionAndAnswer);
+};
